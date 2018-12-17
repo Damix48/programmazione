@@ -66,8 +66,16 @@ end
 ### Triangolo
 Scrivere un programma che stabilisca se, data la lunghezza di 3 segmenti, questi possono essere disposti per formare un triangolo.
 Il programma deve ricevere in ingresso (`stdin`) 3 lunghezze, ciascuna codiﬁcata con un `int` e controllare che tutte siano strettamente positive, altrimenti stampare il messaggio `Input sbagliato`. Nel caso in cui la condizione di positività sia invece veriﬁcata, il programma stamperà il messaggio `Si` se i segmenti possono essere distribuiti per formare un triangolo, `No` altrimenti.
+
 **Esempio 1**
-start 0 4 5 Input sbagliato end
+```
+start
+0
+4
+5
+Input sbagliato
+end
+```
 **Esempio 2**
 ```
 start
