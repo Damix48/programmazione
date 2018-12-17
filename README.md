@@ -2,7 +2,7 @@
 
 ## Esercizio 1 (11/12/2018)
 ### Minimo tra tre valori
-Scrivere un programma che trovi il minimo tra tre valori interi a, b e c. Il programma deve ricevere come input i tre valori e stampare sullo schermo `il minimo e’:` seguito dal valore minimo.
+Scrivere un programma che trovi il minimo tra tre valori interi a, b e c. Il programma deve ricevere come input i tre valori e stampare sullo schermo `il minimo e':` seguito dal valore minimo.
 
 **Esempio**
 ```
