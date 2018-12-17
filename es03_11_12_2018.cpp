@@ -1,9 +1,10 @@
-#include<iostream>
+#include <iostream>
 
 using namespace std;
 
-int main() {
-    // delimitatore iniziale output del programma (stringa "start")\
+int main()
+{
+	// delimitatore iniziale output del programma (stringa "start")\
 	// ATTENZIONE! Non cancellare l'istruzione sottostante
 	cout << "start" << endl;
 
