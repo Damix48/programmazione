@@ -10,52 +10,13 @@ Scrivere un programma che legge un valore intero n > 0 e una sequenza di n coppi
 Il programma deve dichiarare quale giocatore ha vinto alla ﬁne della sequenza di n giocate, scrivendo sullo schermo `Vince il Giocatore 1`, oppure `Vince il Giocatore 2`, oppure `Pareggio`.
 
 
-
-## Esercizio 2 (11/12/2018)
-### Gioco della morra cinese
-Scrivere un programma che consenta di giocare alla morra cinese. Il programma deve ricevere in ingresso (`stdin`) le mosse dei due giocatori, ciascuna codiﬁcata con un `char`:
-* se il carattere è `f` la mossa del giocatore è forbice
-* se il carattere è `c` la mossa del giocatore è carta
-* se il carattere è `s` la mossa del giocatore è sasso
-
-Se viene inserita una mossa non valida il programma deve scrivere sullo schermo (`stdout`) `mossa non valida` e terminare l’esecuzione. Se entrambe le mosse sono valide, il programma deve dichiarare il vincitore scrivendo sullo schermo `vince il giocatore 1` oppure `vince il giocatore 2`, oppure `pareggio`.
-Si ricordi che:
-* forbice vince su carta
-* carta vince su sasso
-* sasso vince su forbice
+## Esercizio 2 (18/12/2018)
+### Parentesi Bilanciate
+Scrivere un programma che legga da cin una sequenza di caratteri ﬁno ad incontrare il carattere `0`. Dei caratteri letti deve considerare *solo* le parentesi tonde aperte `(` e chiuse `)` e deve veriﬁcare che le parentesi siano bilanciate, cioè che ogni parentesi aperta abbia una corrispondente parentesi chiusa e, viceversa, che ogni parentesi chiusa abbia una corrispondente parentesi aperta.
+A fronte di una sequenza di parentesi bilanciate il programma deve scrivere: `la sequenza e' bilanciata`. Altrimenti, dovrà stampare: `la sequenza non e' bilanciata: `, seguita da *una* delle seguenti due frasi: `ci sono parentesi aperte senza match` oppure `ci sono parentesi chiuse senza match`, a seconda del caso. 
 
 **Esempio 1**
-```
-start
-f
-c
-vince il giocatore 1
-end
-```
-**Esempio 2** 
-```
-start
-s
-c
-vince il giocatore 2
-end
-```
-**Esempio 3**
-```
-start
-f
-f
-pareggio
-end
-```
-**Esempio 4** 
-```
-start
-x
-c
-mossa non valida
-end
-```
+Supponiamo che i caratteri letti da `cin` siano i seguenti: `a b c ) z z z ( a ) 0`, allora la sequenza non è bilanciata. In questo caso, lo sbilanciamento viene scoperto alla prima parentesi chiusa letta. Quindi la lettura dei successivi caratteri non è necessaria e il programma dovrà scrivere in output: `la sequenza non e' bilanciata: ci sono parentesi chiuse senza match`. La seguente sequenza: `( a ( b ( c) ) z z z ( a ) ) 0`, è invece bilanciata; in questo caso, il programma scriverà in output: `la sequenza e' bilanciata`. Un altro esempio di sequenza non bilanciata è il seguente `(a( b ( c ) ) z z z ( a ) 0`; il programma dovrà scrivere: `la sequenza non e' bilanciata: ci sono parentesi aperte senza match`. (Nota: negli 2 ultimi casi è necessario leggere tutti i caratteri ﬁno allo `0` per sapere se la sequenza è bilanciata o meno).
 
 
 ## Esercizio 3 (11/12/2018)
