@@ -11,11 +11,11 @@ int main() {
     int a, b, c;
     cin >> a >> b >> c;
 
-    if (a < b && a < c) {
+    if (a <= b && a <= c) {
         cout << "il minimo e': " << a << endl;
-    } else if (b < a && b < c) {
+    } else if (b <= a && b <= c) {
         cout << "il minimo e': " << b << endl;
-    } else if (c < a && c < b) {
+    } else if (c <= a && c <= b) {
         cout << "il minimo e': " << c << endl;
     }
 
