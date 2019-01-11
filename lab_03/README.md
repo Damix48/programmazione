@@ -1,17 +1,27 @@
 # LAB 03
 
-## Esercizio 1 (11/12/2018)
-### Minimo tra tre valori
-Scrivere un programma che trovi il minimo tra tre valori interi a, b e c. Il programma deve ricevere come input i tre valori e stampare sullo schermo `il minimo e':` seguito dal valore minimo.
+## Esercizio 1 (08/01/2019)
+### Albero di Natale
+Scrivere un programma che legga da `cin` un valore intero n che rappresenta l'altezza di un albero di Natale. Per valori di n < 3, il programma deve stampare `Altezza non valida`, altrimenti stamperà un albero secondo gli esempi forniti di seguito.
+
 
 **Esempio**
 ```
-start
-7
-2
-11
-il minimo e’: 2
-end
+(n = 3):
+ *
+***
+ * 
+(n = 4):
+  *
+ ***
+*****
+  * 
+(n = 5):
+   *
+  ***
+ *****
+*******
+   *
 ```
 
 

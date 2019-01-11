@@ -13,3 +13,9 @@
 * **Esercizio 2** (Parentesi Bilanciate)
 * **Esercizio 3** (Parentesi Bilanciate II)
 
+## [LAB 03](https://github.com/Damix48/programmazione/tree/master/lab_03)
+### 08/01/2019
+* **Esercizio 1** (Albero di Natale)
+* **Esercizio 2** (Parentesi Bilanciate)
+* **Esercizio 3** (Parentesi Bilanciate II)
+
