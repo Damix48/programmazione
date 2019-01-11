@@ -8,9 +8,8 @@ int main() {
     cout << "start" << endl;
 
     // inserire qui il codice del programma
-    char a = ' ';
+    char a;
     bool ciclo = true;
-    int count = 0;
     int p_c = 0;
     int p_a = 0;
     int parola = 0;
