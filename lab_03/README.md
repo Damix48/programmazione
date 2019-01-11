@@ -66,20 +66,20 @@ Scrivere un programma che legga da cin 4 interi `x1`, `y1`, `x2`, `y2` che rappr
 **Esempio 1**
 ```
 P=(x1 = 1, y1 = 2) Q=(x2 = 6, y2 = 7):
+        *
+      *
     *
-   *
   *
- *
 *
 ```
 **Esempio 2**
 ```
 P=(x1 = 1, y1 = 2) Q=(x2 = 6, y2 = -3):
 *
- *
   *
-   *
     *
+      *
+        *
 ```
 **Esempio 3**
 ```
