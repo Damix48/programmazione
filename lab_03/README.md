@@ -2,7 +2,7 @@
 
 ## Esercizio 1 (08/01/2019)
 ### Albero di Natale
-Scrivere un programma che legga da `cin` un valore intero n che rappresenta l'altezza di un albero di Natale. Per valori di n < 3, il programma deve stampare `Altezza non valida`, altrimenti stamperà un albero secondo gli esempi forniti di seguito.
+Scrivere un programma che legga da `cin` un valore intero `n` che rappresenta l'altezza di un albero di Natale. Per valori di `n < 3`, il programma deve stampare `Altezza non valida`, altrimenti stamperà un albero secondo gli esempi forniti di seguito.
 
 
 **Esempio 1**
@@ -30,91 +30,59 @@ Scrivere un programma che legga da `cin` un valore intero n che rappresenta l'al
    *
 ```
 
-## Esercizio 2 (11/12/2018)
-### Gioco della morra cinese
-Scrivere un programma che consenta di giocare alla morra cinese. Il programma deve ricevere in ingresso (`stdin`) le mosse dei due giocatori, ciascuna codiﬁcata con un char:
-* se il carattere è `f` la mossa del giocatore è forbice
-* se il carattere è `c` la mossa del giocatore è carta
-* se il carattere è `s` la mossa del giocatore è sasso
-
-Se viene inserita una mossa non valida il programma deve scrivere sullo schermo (`stdout`) `mossa non valida` e terminare l’esecuzione. Se entrambe le mosse sono valide, il programma deve dichiarare il vincitore scrivendo sullo schermo `vince il giocatore 1` oppure `vince il giocatore 2`, oppure `pareggio`.
-Si ricordi che:
-* forbice vince su carta
-* carta vince su sasso
-* sasso vince su forbice
+## Esercizio 2 (08/01/2019)
+### Albero di Natale rovesciato
+Scrivere un programma che legga da `cin` un valore intero `n` che rappresenta l'altezza di un albero di Natale. Per valori di `n < 3`, il programma deve stampare `Altezza non valida`, altrimenti stamperà un albero secondo gli esempi forniti di seguito.
 
 **Esempio 1**
 ```
-start
-f
-c
-vince il giocatore 1
-end
+(n = 3):
+ *
+***
+ *
 ```
 **Esempio 2** 
 ```
-start
-s
-c
-vince il giocatore 2
-end
+(n = 4):
+  *
+*****
+ ***
+  *
 ```
 **Esempio 3**
 ```
-start
-f
-f
-pareggio
-end
-```
-**Esempio 4** 
-```
-start
-x
-c
-mossa non valida
-end
+   *
+*******
+ *****
+  ***
+   *
 ```
 
 
-## Esercizio 3 (11/12/2018)
-### Triangolo
-Scrivere un programma che stabilisca se, data la lunghezza di 3 segmenti, questi possono essere disposti per formare un triangolo.
-Il programma deve ricevere in ingresso (`stdin`) 3 lunghezze, ciascuna codiﬁcata con un `int` e controllare che tutte siano strettamente positive, altrimenti stampare il messaggio `Input sbagliato`. Nel caso in cui la condizione di positività sia invece veriﬁcata, il programma stamperà il messaggio `Si` se i segmenti possono essere distribuiti per formare un triangolo, `No` altrimenti.
+## Esercizio 3 (08/01/2019)
+### Diagonale di un Quadrato
+Scrivere un programma che legga da cin 4 interi `x1`, `y1`, `x2`, `y2` che rappresentano le coordinate sul piano cartesiano `Oxy` di due punti: `P(x1,y1)` e `Q(x2,y2)`. I due punti `P` e `Q` devono rappresentare gli estremi di una diagonale di un quadrato; in altre parole, deve valere la seguente proprietà: `|x2−x1| = |y2−y1|`. Qualora questa proprietà non venisse soddisfatta, il programma deve stampare a video `Le coordinate immesse non formano la diagonale di un quadrato`. Altrimenti, stamperà il segmento che unisce i punti `P` e `Q` (ossia la diagonale del quadrato), utilizzando il carattere `*` come mostrato negli esempi di seguito
 
 **Esempio 1**
 ```
-start
-0
-4
-5
-Input sbagliato
-end
+P=(x1 = 1, y1 = 2) Q=(x2 = 6, y2 = 7):
+    *
+   *
+  *
+ *
+*
 ```
 **Esempio 2**
 ```
-start
--1
--2
-0
-Input sbagliato
-end
+P=(x1 = 1, y1 = 2) Q=(x2 = 6, y2 = -3):
+*
+ *
+  *
+   *
+    *
 ```
 **Esempio 3**
 ```
-start
-4
-3
-5
-Si
-end
-```
-**Esempio 4**
-```
-start
-1
-3
-2
-No
-end
+P=(x1 = 1, y1 = 2) Q=(x2 = 0, y2 = 4):
+Le coordinate immesse non formano la diagonale di un quadrato
 ```
