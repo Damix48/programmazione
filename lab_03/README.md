@@ -5,17 +5,23 @@
 Scrivere un programma che legga da `cin` un valore intero n che rappresenta l'altezza di un albero di Natale. Per valori di n < 3, il programma deve stampare `Altezza non valida`, altrimenti stamperà un albero secondo gli esempi forniti di seguito.
 
 
-**Esempio**
+**Esempio 1**
 ```
 (n = 3):
  *
 ***
- * 
+ *
+```
+**Esempio 2**
+```
 (n = 4):
   *
  ***
 *****
-  * 
+  *
+```
+**Esempio 3**
+```
 (n = 5):
    *
   ***
@@ -23,7 +29,6 @@ Scrivere un programma che legga da `cin` un valore intero n che rappresenta l'al
 *******
    *
 ```
-
 
 ## Esercizio 2 (11/12/2018)
 ### Gioco della morra cinese
