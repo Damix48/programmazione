@@ -51,6 +51,7 @@ Scrivere un programma che legga da `cin` un valore intero `n` che rappresenta l'
 ```
 **Esempio 3**
 ```
+(n = 5):
    *
 *******
  *****
