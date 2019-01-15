@@ -19,3 +19,9 @@
 * **Esercizio 2** (Albero di Natale rovesciato)
 * **Esercizio 3** (Diagonale di un Quadrato)
 
+## [LAB 05](https://github.com/Damix48/programmazione/tree/master/lab_05)
+### 15/01/2019
+* **Esercizio 1** (Albero di Natale incorniciato)
+* **Esercizio 2** (Esercizio 2)
+* **Esercizio 3** (Esercizio 3)
+
