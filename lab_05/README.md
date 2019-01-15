@@ -28,8 +28,8 @@ Si osservi che la punta dell’albero è nella prima riga e il tronco nell’ult
 ## Esercizio 2 (15/01/2019)
 ### Esercizio 2
 Si chiede di leggere interi da `cin` e calcolare la loro somma finché non si incontra la sentinella costituita da due `-1` consecutivi. La sentinella non viene contata nel calcolo della somma. La `PRE` e la `POST` del programma richiesto sono le seguenti: 
-* `PRE` = (`cin` contiene `-1``-1` consecutivi)
-* `POST` = (il programma calcola la somma dei valori che precedono la sentinella `-1``-1`)
+* `PRE` = (`cin` contiene `-1` `-1` consecutivi)
+* `POST` = (il programma calcola la somma dei valori che precedono la sentinella `-1` `-1`)
 
 
 ## Esercizio 3 (15/01/2019)
