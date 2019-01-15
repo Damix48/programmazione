@@ -35,8 +35,8 @@ Si chiede di leggere interi da `cin` e calcolare la loro somma finché non si in
 ## Esercizio 3 (15/01/2019)
 ### Esercizio 3
 Si tratta di leggere interi da `cin` e sommarli finché non si legge la sentinella `-1` (che non entra nella somma) oppure finché non si leggono 10 valori. Il programma da fare deve soddisfare le seguenti `PRE` e `POST`: 
-`PRE` = (`cin` contiene almeno 10 valori o altrimenti contiene `-1`) 
-`POST` = (se i primi 10 valori letti non contengono `-1`, restituisce la loro somma, se invece entro le prime 10 letture c’è la sentinella `-1`, restituisce la somma dei valori che precedono la sentinella.
+* `PRE` = (`cin` contiene almeno 10 valori o altrimenti contiene `-1`) 
+* `POST` = (se i primi 10 valori letti non contengono `-1`, restituisce la loro somma, se invece entro le prime 10 letture c’è la sentinella `-1`, restituisce la somma dei valori che precedono la sentinella.
 
 Possibili contenuti di `cin` che soddisfano la `PRE` sono i seguenti e per ciascun input si specifica il relativo output.
 **Esempio 1**
