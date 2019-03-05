@@ -3,7 +3,7 @@
 ## Esercizio 1 (05/03/2019)
 ### Esercizio 1
 Scrivere un programma che legga un intero `N` (`0<N<=100`) e dopo legga `N` interi in un array dichiarato  
-`int A [100]; `
+`int A [100];`
 Successivamente il programma deve controllare se `A[0..N-1]` è un palindromo.
 
 **Esempio**
