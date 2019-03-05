@@ -8,6 +8,7 @@ Successivamente il programma deve controllare se `A[0..N-1]` è un palindromo.
 **Esempio**
 Supponiamo che `N = 5` e che `A=[1, 0, 1, 0, 1]`. In questo caso il programma deve stampare `A è un palindromo`, mentre se `N=6` e `A=[0, 1, 0, 1, 1, 0]` il programma deve stampare `A non è palindromo e la prima contraddizione riguarda gli elementi di indice 2 e 3`.
 
+
 ## Esercizio 2 (05/03/2019)
 ### Esercizio 2
 Si tratta di leggere `N` (`0<N<=100`) e poi `N` valori interi in `A`, dichiarato `int A[100]`. Gli `N` valori letti sono tra `0` e `9`. Si chiede di calcolare il numero di occorrenze di ciascun valore `n` in `[0..9]` in `A` e che in funzione di questi valori venga prodotto un istogramma come mostrato nel seguente esempio.
@@ -21,6 +22,7 @@ Sia `N = 10` e `A=[1, 1, 0, 3, 8, 9, 1, 8, 0, 3]`. In `A` sono presenti tre `1`,
 0123456789
 ``` 
 In cui la prima colonna corrisponde a `0` ed ha quindi due stelle, poi la seconda colonna corrisponde a `1` ed ha tre stelle, poi c'è il `2` che ha zero stelle, il `3` che ne ha 2, poi `4`, `5`, `6` e `7` che ne hanno zero e infine `8` con 2 stelle e `9` con una stella.  
+
 
 ## Esercizio 3 (05/03/2019)
 ### Esercizio 3
