@@ -4,7 +4,6 @@
 ### Albero di Natale incorniciato
 Scrivere un programma che legga da `cin` un valore intero `h` che rappresenta l'altezza di un albero di natale. Per valori di `h < 4`, il programma deve stampare `Altezza non valida` e, altrimenti, stamperà un albero incorniciato secondo gli esempi forniti di seguito.
 
-
 **Esempio 1**
 ```
 (h = 4):
