@@ -1,5 +1,10 @@
 # Programmazione
 
+## [ESERCIZI A TEMPO](https://github.com/Damix48/programmazione/tree/master/esercizi_a_tempo)
+### 2° Semestre
+* **Esercizio 1** (07/03/2019)
+
+
 ## [LAB 01](https://github.com/Damix48/programmazione/tree/master/lab_01)
 ### 11/12/2018
 * **Esercizio 1** (Minimo tra tre valori)
