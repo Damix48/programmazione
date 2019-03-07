@@ -6,6 +6,8 @@ Si tratta di dichiarare due array `int A1[10][5]` e `int A2[10][5]` e di leggere
 Successivamente si chiede di dichiarare un array `bool B[10][10]` e di assegnare valori `true`/`false` ad ogni elemento di `B` in modo tale che per ogni elemento `B[i][j]` la seguente condizione sia verificata: 
 `B[i][j]=true` sse la riga `i` di `A2` non ha alcun elemento in comune con la riga `j` di `A2`. 
 Si osservi che ovviamente, per ogni `i` e `j`, `B[i][j]==B[j][i]`, cioè la matrice è simmetrica rispetto alla diagonale principale. Inoltre la diagonale principale di `B` conterrà tutti valori `false`. 
-Per ultimo si chiede di stampare l'array `B` per righe. Si tenga conto che stampare true produce `1` e stampare `false` produce `0`. 
+Per ultimo si chiede di stampare l'array `B` per righe. Si tenga conto che stampare true produce `1` e stampare `false` produce `0`.
+
 **Correttezza**: Scrivere invarianti per tutti i cicli del programma. Gli invarianti vanno inseriti come commenti prima o dopo il programma. Ricordare che un invariante utile descrive quello che il ciclo ha fatto dopo un qualsiasi numero di iterazioni. 
+
 **Attenzione**: sono predisposti solo 2 test automatici.
