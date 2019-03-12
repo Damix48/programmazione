@@ -20,7 +20,10 @@ int main() {
                     cout << X[i][j][k] << " ";
                 }
             }
-            cout << endl;
+            if (X[i][j][0] == 0) {
+            } else {
+                cout << endl;
+            }
         }
     }
 
