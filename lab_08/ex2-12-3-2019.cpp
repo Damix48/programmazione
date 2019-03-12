@@ -3,7 +3,6 @@ using namespace std;
 int main() {
 
     int X[2][4][5] = {}, N;
-    int *x_ = &X[0][0][0];
 
     cin >> N;
 
