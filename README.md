@@ -36,3 +36,15 @@
 * **Esercizio 1** (Esercizio 1)
 * **Esercizio 2** (Esercizio 2)
 * **Esercizio 3** (Esercizio 3)
+
+
+## [LAB 08](https://github.com/Damix48/programmazione/tree/master/lab_08)
+### 12/03/2019
+* **Esercizio 1** (Esercizio 1)
+* **Esercizio 2** (Esercizio 2)
+
+
+## [LAB 09](https://github.com/Damix48/programmazione/tree/master/lab_09)
+### 19/03/2019
+* **Esercizio 1** (Esercizio 1)
+* **Esercizio 2** (Esercizio 2)
