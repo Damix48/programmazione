@@ -3,6 +3,7 @@
 ## [ESERCIZI A TEMPO](https://github.com/Damix48/programmazione/tree/master/esercizi_a_tempo)
 ### 2° Semestre
 * **Esercizio 1** (07/03/2019)
+* **Esercizio 2** (21/03/2019)
 
 
 ## [LAB 01](https://github.com/Damix48/programmazione/tree/master/lab_01)
@@ -46,5 +47,11 @@
 
 ## [LAB 09](https://github.com/Damix48/programmazione/tree/master/lab_09)
 ### 19/03/2019
+* **Esercizio 1** (Esercizio 1)
+* **Esercizio 2** (Esercizio 2)
+
+
+## [LAB 10](https://github.com/Damix48/programmazione/tree/master/lab_10)
+### 26/03/2019
 * **Esercizio 1** (Esercizio 1)
 * **Esercizio 2** (Esercizio 2)
