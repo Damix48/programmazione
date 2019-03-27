@@ -7,16 +7,16 @@ bool patternCheck(int *A, int dim, int *Pattern, int dim_p) {
     // PRE: A contiene dim elementi; Pattern contiene dim_p elementi;
     // trovato=false
 
-    for (int i = 0; i < dim && !trovato; i++) {
-        // R1: (0<=i<=dim) && trovato==false SSE non sono stati trovati match
-        // tra A[i..(i+dim)] e Pattern[0..dim]
+    for (int i = 0; i < (dim - dim_p + 1) && !trovato; i++) {
+        // R1: (0<=i<=(dim - dim_p + 1)) && trovato==false SSE non sono stati
+        // trovati match tra A[i..(i+dim)] e Pattern[0..dim]
 
         bool controllo = false;
         for (int j = 0; j < dim_p && !controllo; j++) {
             // R2: (0<=i<=dim) && controllo==false SSE sono state trovate j
             // corrispondenze tra A[i+j] e Pattern[j]
 
-            if (A[i + j] != Pattern[j] || (i + j) >= dim) {
+            if (A[i + j] != Pattern[j]) {
                 controllo = true;
             } else if (A[i + j] == Pattern[j] && j + 1 == dim_p) {
                 trovato = true;

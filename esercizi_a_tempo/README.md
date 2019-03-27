@@ -11,3 +11,7 @@ Per ultimo si chiede di stampare l'array `B` per righe. Si tenga conto che stamp
 **Correttezza**: Scrivere invarianti per tutti i cicli del programma. Gli invarianti vanno inseriti come commenti prima o dopo il programma. Ricordare che un invariante utile descrive quello che il ciclo ha fatto dopo un qualsiasi numero di iterazioni. 
 
 **Attenzione**: sono predisposti solo 2 test automatici.
+
+
+## Esercizio 2 (21/03/2019)
+### Esercizio 2
