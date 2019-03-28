@@ -6,7 +6,6 @@
                 "C:/MinGW/include",
                 "C:/MinGW/lib/gcc/mingw32/8.2.0/include/",
                 "C:/MinGW/lib/gcc/mingw32/8.2.0/include/c++/tr1",
-                "C:/MinGW/lib/gcc/mingw32/8.2.0/include/c++/iostream",
                 "C:/MinGW/lib/gcc/mingw32/8.2.0/include/c++/mingw32"
             ],
             "defines": [
