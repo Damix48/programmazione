@@ -26,6 +26,7 @@ int main() {
     int lim1, lim2, lim3;
     cin >> lim1 >> lim2 >> lim3;
     cout << "start" << endl;
+
     bool stop = false;
     int count = 0;
     while (!stop) {
@@ -45,7 +46,7 @@ int main() {
         }
         count++;
     }
-    // ciclo che invoca TV da fare
+
     int piene = 100 / (lim2 * lim3);
     for (int i = 0; i < piene + 1 && i < lim1; i++) {
         int ele = lim2 * lim3;
