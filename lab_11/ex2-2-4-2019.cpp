@@ -2,7 +2,7 @@
 
 using namespace std;
 
-bool saltoSensore(part, *dati){
+bool controlloPartecipante(part, *dati, n){
     
 }
 
@@ -45,7 +45,8 @@ int main() {
 
     for(int i=0;i<n_part;i++)
     {
-        bool t=saltoSensore(i,letture);
+        int dati[3][5];
+        bool t=controlloPartecipante(i,letture, n_letture);
     }
     cout << "end" << endl;
 }
