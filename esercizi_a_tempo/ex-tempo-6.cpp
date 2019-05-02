@@ -44,13 +44,36 @@ nodoP *aux(nodo *L, int x) {
         return 0;
     }
     if (L->info != x) {
-        return aux(L->next, x);
+        return aux(L->next, x); //(a)
     }
-    return new nodoP(L, aux(L->next, x));
+    return new nodoP(L, aux(L->next, x)); //(b)
 }
 // POST=(restituisce una lista di nodoP lunga come il n. di nodi di Lista(L)
 // con x=info e i cui nodi puntano a questi nodi di L nell’ordine in cui i
 // nodi sono in L)
+
+/*   CORRETTEZZA   */
+
+// - caso base (!L): non esiste il nodo L nella lista Lista(L), la funzione
+// restituisce quindi 0.
+
+// - caso ricorsivo: L->info==x trova un match nel primo nodo di L e creo un
+// nodo che punta ad L tramite il campo info della lista creata sulla base di
+// nodoP
+// aux(L->next, x) sia in (a) e in (b) invoca la chiamata ricorsiva per
+// controllare eventuali match di x con altri nodi della lista L
+
+//       PRE_ric: Lista(L) è ben formata && x è definito; è vero, e quindi vale
+//       la POST_ric cioè dopo
+
+//               if (L->info != x) {
+//                       return aux(L->next, x);
+//               }
+//               return new nodoP(L, aux(L->next,x));
+
+//       la funzione ha restituito una lista di nodoP lunga come il numero di
+//       nodi di Lista(L) con info==x e i cui nodi puntano a questi nodi fi L
+//       nell'ordine in cui i nodi sono in L.
 
 nodoP *ultimo(nodoP *y) {
     if (!y->next) {
