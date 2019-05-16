@@ -2,7 +2,8 @@
     "files.associations": {
         "iostream": "cpp",
         "cstdlib": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "iosfwd": "cpp"
     },
     "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM, IndentWidth: 4}",
     "C_Cpp.intelliSenseEngineFallback": "Enabled",
