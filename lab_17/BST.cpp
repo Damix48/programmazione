@@ -28,56 +28,56 @@ nodo *insert(nodo *r, int x) {
     return r;
 }
 
-bool search(nodo *r, int x){
-    if(!r){
+bool search(nodo *r, int x) {
+    if (!r) {
         return false;
     }
-    if(r->info==x){
+    if (r->info == x) {
         return true;
     }
-    if(x<r->info){
-        return search(r->left,x);
-    }else{
-        return search(r->right,x);
+    if (x < r->info) {
+        return search(r->left, x);
+    } else {
+        return search(r->right, x);
     }
 }
-nodo *max(nodo *r){
-    if(!r->right){
+nodo *max(nodo *r) {
+    if (!r->right) {
         return r;
-    }else{
+    } else {
         return max(r->right);
     }
 }
-nodo *min(nodo *r){
-    if(!r->left){
+nodo *min(nodo *r) {
+    if (!r->left) {
         return r;
-    }else{
+    } else {
         return min(r->left);
     }
 }
 
-int altezza(nodo *r){
-    if(!r){
+int altezza(nodo *r) {
+    if (!r) {
         return -1;
     }
-    int a=altezza(r->left)+1;
-    int b=altezza(r->right)+1;
+    int a = altezza(r->left) + 1;
+    int b = altezza(r->right) + 1;
 
-    if(a>b){
+    if (a > b) {
         return a;
     }
     return b;
 }
 
-int altMin(nodo *r){
-    if(!r){
+int altMin(nodo *r) {
+    if (!r) {
         return 0;
     }
 
-    int a=altMin(r->left)+1;
-    int b=altMin(r->right)+1;
+    int a = altMin(r->left) + 1;
+    int b = altMin(r->right) + 1;
 
-    if(a<b){
+    if (a < b) {
         return a;
     }
     return b;
