@@ -74,8 +74,8 @@ int altMin(nodo *r) {
         return 0;
     }
 
-    int a = altMin(r->left) + 1;
-    int b = altMin(r->right) + 1;
+    int a = altezza(r->left) + 1;
+    int b = altezza(r->right) + 1;
 
     if (a < b) {
         return a;

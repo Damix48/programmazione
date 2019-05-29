@@ -18,4 +18,5 @@ nodo *&min(nodo *&);
 int altezza(nodo *);
 int altMin(nodo *);
 void elim(nodo *&, int);
+nodo *elim1(nodo *, int);
 #endif

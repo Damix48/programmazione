@@ -79,12 +79,12 @@ int altezza(nodo *r) {
 }
 
 int altMin(nodo *r) {
-    if (!r || (!r->left && !r->right)) {
+    if (!r) {
         return 0;
     }
 
-    int a = altMin(r->left) + 1;
-    int b = altMin(r->right) + 1;
+    int a = altezza(r->left) + 1;
+    int b = altezza(r->right) + 1;
 
     if (a < b) {
         return a;
@@ -92,34 +92,28 @@ int altMin(nodo *r) {
     return b;
 }
 
-void elim(nodo *&r, int x) {
-    if (r != NULL) // Caso base (1)
-    {
-        if (r->info == x) // Caso base (2)
-        {
-            if (r->left == NULL && r->right == NULL)
-                r = NULL;
-            else if (r->right == NULL)
-                r = r->left;
-            else if (r->left == NULL)
-                r = r->right;
-            else {
+nodo *elim1(nodo *r, int x) {
+    if (r) {
+        if (r->info == x) {
+            if (!r->left && !r->right) {
+                return 0;
+            } else if (!r->left) {
+                return r->right;
+            } else if (!r->right) {
+                return r->left;
+            } else {
                 nodo *&y = min(r->right);
-                nodo *p = y;
+                r->info = y->info;
                 y = y->right;
-                p->right = r->right;
-                p->left = r->left;
-                r->right = NULL;
-                r->left = NULL;
-                r = p;
-                // delete r;
+                return r;
             }
-        } else if (x < r->info) // Caso ricorsivo (1)
-        {
-            elim(r->left, x);
-        } else // if(x > r->info) Caso ricorsivo (2)
-        {
-            elim(r->right, x);
+        } else if (x < r->info) {
+            r->left = elim1(r->left, x);
+            // return r;
+        } else {
+            r->right = elim1(r->right, x);
+            // return r;
         }
     }
+    return r;
 }

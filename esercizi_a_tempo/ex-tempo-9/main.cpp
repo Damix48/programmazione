@@ -48,7 +48,7 @@ int main() {
         case 7:
             int a;
             cin >> a;
-            elim(r, a);
+            r = elim1(r, a);
             stampa_l(r);
             break;
         }
