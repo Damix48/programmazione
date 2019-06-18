@@ -1,84 +1,82 @@
 #include <iostream>
-<<<<<<< HEAD
-
 using namespace std;
 
-struct Complex {
-    int real;
-    int imaginary;
-
-    Complex(int a, int b) {
-        real = a;
-        imaginary = b;
+struct nodo {
+    int info;
+    nodo *next;
+    nodo(int a = 0, nodo *b = 0) {
+        info = a;
+        next = b;
+    }
+};
+struct coda {
+    nodo *primo, *ultimo;
+    coda(nodo *a = 0) {
+        primo = a;
+        ultimo = a;
+    }
+};
+struct nodoE {
+    coda *C;
+    int N, V;
+    nodoE *next;
+    nodoE(coda *a = 0, int b = 0, int c = 0, nodoE *d = 0) {
+        C = a;
+        N = b;
+        V = c;
+        next = d;
     }
 };
 
-ostream &operator<<(ostream &s, const Complex &t) {
-    if (t.real != 0) {
-        s << t.real;
-        if (t.imaginary > 0) {
-            s << " + ";
-        }
-        if (t.imaginary < 0) {
-            s << " - ";
-        }
+void push_end(coda *x, nodo *p) {
+    p->next = 0;
+    if (!x->primo)
+        x->primo = x->ultimo = p;
+    else {
+        x->ultimo->next = p;
+        x->ultimo = p;
     }
-
-    if (t.imaginary > 0) {
-        s << t.imaginary << "i";
-    } else if (t.imaginary < 0) {
-        if (t.real == 0) {
-            s << t.imaginary << "i";
-        } else {
-            s << t.imaginary * -1 << "i";
-        }
+}
+nodo *faiLista() {
+    int x;
+    cin >> x;
+    if (x == -1)
+        return 0;
+    return new nodo(x, faiLista());
+}
+int conta(nodo *L) {
+    if (L)
+        return 1 + conta(L->next);
+    return 0;
+}
+void stampa(nodoE *X, int n) {
+    if (X) {
+        if (conta(X->C->primo) == X->N && X->C->primo->info == X->V) {
+            cout << "lista " << n << " con " << X->N << " nodi, con valore "
+                 << X->V << endl;
+            stampa(X->next, n + 1);
+        } else
+            cout << "errore nella lista n." << n << endl;
     }
+}
+// INIZIO
+/*iniziofunzioni.h*/
+nodoE *trova(nodoE *, int){};
+void aggiungi(nodoE *, nodo *){};
+nodoE *addLast(nodoE *, nodoE *){};
+/*fine funzione lib.h*/
+// PRE=(L è una lista benformata e ris è una lista di nodoE tali che ogni nodoE
+// gestisce una lista di nodi con info uguale, Nè pari al numero dei nodi gestiti
+// e V è il campo info dei nodi, Vris=ris)
+nodoE *faitutto(nodo *L, nodoE *ris) {}
+// POST=(restituisce ris che è ottenuta da Vris trattando ogni nodo di L nel
+// modo specificato dal precedente algoritmo)
 
-    return s;
-}
-
-Complex operator+(const Complex &x, const Complex &y) {
-    return Complex(x.real + y.real, x.imaginary + y.imaginary);
-}
-Complex operator-(const Complex &x, const Complex &y) {
-    return Complex(x.real - y.real, x.imaginary - y.imaginary);
-}
-Complex operator*(const Complex &x, const Complex &y) {
-    return Complex(x.real * y.real - x.imaginary * y.imaginary,
-                   x.real * y.imaginary + y.real * x.imaginary);
-}
-
+// FINE
 int main() {
-    Complex a = Complex(10, 10);
-    Complex b = Complex(1, 10);
-    Complex v = Complex(1, 3);
-    Complex e = Complex(0, 3);
-    Complex f = Complex(2, 0);
-    Complex g = Complex(2, -20);
-    Complex h = Complex(0, -20);
-    cout << e << endl;
-    cout << f << endl;
-    cout << g << endl;
-    cout << h << endl;
-=======
-using namespace std;
-
-struct Data {
-    int giorno, mese, anno;
-
-    Data(int giorno_, int mese_, int anno_) {
-        giorno = giorno_;
-        mese = mese_;
-        anno = anno_;
-    }
-};
-ostream &operator<<(ostream &s, const Data &d) {
-    s << d.giorno << "/" << d.mese << "/" << d.anno;
-    return s;
-};
-
-int main() {
-    Data a = Data(22, 12, 2019);
-    cout << a;
->>>>>>> c72c98138cbbe9ae6d338fe260f428c687fcb0cc
+    cout << "start" << endl;
+    nodo *K = faiLista();
+    nodoE *R = faitutto(K, 0);
+    stampa(R, 0);
+    cout << "end" << endl;
 }

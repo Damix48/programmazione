@@ -92,28 +92,53 @@ int altMin(nodo *r) {
     return b;
 }
 
+// PRE=albero(r) è ben formato e x è definito
 nodo *elim1(nodo *r, int x) {
-    if (r) {
+    if (r) { // caso base (1): albero(r) non è vuoto quindi va fatta
+             // l'eliminazione
         if (r->info == x) {
-            if (!r->left && !r->right) {
+
+            if (!r->left && !r->right) { // caso base (2): se r è una foglia è
+                                         // corretto eliminarla e ritornare 0
+                                         // => albero(r) è ben formato ed è
+                                         // stato eliminato un nodo
+                                         // => POST
                 return 0;
-            } else if (!r->left) {
+            } else if (!r->left) { // caso base (2): se r non ha un figlio a
+                                   // sinistra lo sostituisco con quello di
+                                   // destra ritorndo r->right
+                                   // => albero(r) è ben formato ed è stato
+                                   // eliminato un nodo e spostato il nodo
+                                   // figlio
+                                   // => POST
                 return r->right;
-            } else if (!r->right) {
+            } else if (!r->right) { // caso base (4)
                 return r->left;
-            } else {
+            } else { // caso base 5: se r ha entrambi i figli prendo il
+                     // puntatore al nodo minore del suo sottoalbero destro,
+                     // copio info del minimo nel campo info di r e sostituisco
+                     // a minimo il suo sottoalbero destro e restituisco r
+                     // modificato
+                     // => albero(r) è ancora ben formato ed è stato eliminato
+                     // un nodo come da testo
+                     // => POST
                 nodo *&y = min(r->right);
                 r->info = y->info;
                 y = y->right;
                 return r;
             }
-        } else if (x < r->info) {
+        } else if (x < r->info) { // PRE_ric = !(2) => albero(r) è ben formto ma
+                                  // r non è il nodo da eliminare
+                                  // PRE_ric verificata
             r->left = elim1(r->left, x);
             // return r;
         } else {
             r->right = elim1(r->right, x);
             // return r;
-        }
+        } // POST_ric: essendo PRE_ric verificata assumo per induzione che lo
+          // sia anche POST_ric
+          // modifico r->left o r->right con il sottoalbero sinistro o destro
+          // dove eventualmente è stato trovato un nodo da eliminare
     }
     return r;
 }
